@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yogesh simgh rawat</title>
+</head>
+<h1>YOGESH SINGH RAWAT</h1>
+<body>
+    <DIv>
+        <UL>
+            <LI>EXPERINCE</LI>
+            <LI>WORK</LI>
+            <LI>STENGTH</LI>
+        </UL>
+    </DIv>
+    <FOoter>
+       <P> I WANTED TO WORK IN A SOFTTWARE AND WEB DEVELPMENT DEPARTMENT<p></p>
+       </FOOter>
+        var readlineSync = require('readline-sync');
+        var score = 0;
+        var userName = readlineSync.question(" what is your name?");
+        console.log("welcome " + userName + " do you know tanay?");
+        
+        function play(question, answer) {
+        
+          var userAnswer = readlineSync.question(question);
+          if (userAnswer === answer) {
+            console.log("right!");
+            score= score+1
+          }
+          else{
+            console.log("wrong!"); 
+          }
+          console.log("current score", score);
+          console.log("-------------")
+        }
+        var questions = [{
+          question: "where do i live?",
+          answer : "bangalore"
+        }, {
+          question : " my favorite super hero?",
+            answer: "dhruv"
+        }]
+        for ( var i=0; i<questions.length; i++) {
+          var currentQuestion= questions[i];
+          play ( currentQuestion.question,currentQuestion.answer)
+        }
+
+</body>
+</html>
